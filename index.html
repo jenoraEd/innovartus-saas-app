@@ -4,119 +4,494 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Innovartus Technologies</title>
+
+    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
 </head>
 <body>
 
-<nav>
-    <div class="logo">Innovartus Tech</div>
+<!-- PARTICLE BACKGROUND -->
+<div id="particles-js"></div>
 
-    <ul>
+<!-- CUSTOM CURSOR GLOW -->
+<div class="cursor-glow"></div>
+
+<!-- NAVBAR -->
+<nav id="navbar">
+
+    <div class="logo">
+        Innovartus
+    </div>
+
+    <ul class="nav-links">
+
         <li><a href="#home">Home</a></li>
+
         <li><a href="#services">Services</a></li>
-        <li><a href="#tech">Technology</a></li>
+
+        <li><a href="#about">About</a></li>
+
+        <li><a href="#technology">Technology</a></li>
+
+        <li><a href="#projects">Projects</a></li>
+
         <li><a href="#contact">Contact</a></li>
+
     </ul>
+
+    <div class="menu-btn">
+        <i class="fas fa-bars"></i>
+    </div>
+
 </nav>
 
-<header id="home">
+<!-- HERO SECTION -->
+<section class="hero" id="home">
+
     <div class="hero-content">
-        <h1>Empowering Businesses Through Technology</h1>
-        <p>
-            Cloud Computing • Cybersecurity • AI Solutions • Web Development
-        </p>
-        <button id="learnMore">Explore Services</button>
-    </div>
-</header>
 
+        <span class="badge">
+            🚀 Next Generation Technology Solutions
+        </span>
+
+        <h1>
+            Building The Future
+            With Technology
+        </h1>
+
+        <p class="typing"></p>
+
+        <div class="hero-buttons">
+
+            <button class="primary-btn">
+                Explore Services
+            </button>
+
+            <button class="secondary-btn">
+                Contact Us
+            </button>
+
+        </div>
+
+    </div>
+
+    <div class="hero-image">
+
+        <img
+        src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=1200"
+        alt="Technology">
+
+    </div>
+
+</section>
+
+<!-- STATS -->
 <section class="stats">
-    <div>
+
+    <div class="stat-card">
+
         <h2 id="clients">0</h2>
-        <p>Clients</p>
+
+        <p>Clients Worldwide</p>
+
     </div>
 
-    <div>
-        <h2 id="projects">0</h2>
-        <p>Projects</p>
+    <div class="stat-card">
+
+        <h2 id="projectsCounter">0</h2>
+
+        <p>Projects Delivered</p>
+
     </div>
 
-    <div>
+    <div class="stat-card">
+
         <h2 id="uptime">0</h2>
-        <p>System Uptime %</p>
+
+        <p>% Cloud Uptime</p>
+
     </div>
+
+    <div class="stat-card">
+
+        <h2 id="countries">0</h2>
+
+        <p>Countries Served</p>
+
+    </div>
+
 </section>
 
+<!-- ABOUT -->
+<section id="about" class="about">
+
+    <div class="about-image">
+
+        <img
+        src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1200"
+        alt="Innovation">
+
+    </div>
+
+    <div class="about-content">
+
+        <h2>About Innovartus</h2>
+
+        <p>
+
+            Innovartus Technologies delivers cutting-edge
+            cloud solutions, cybersecurity services,
+            artificial intelligence innovations,
+            software engineering, and digital transformation
+            strategies for modern businesses.
+
+        </p>
+
+        <p>
+
+            We help organizations leverage technology
+            to drive growth, improve efficiency,
+            and stay ahead in an increasingly digital world.
+
+        </p>
+
+    </div>
+
+</section>
+
+<!-- SERVICES -->
 <section id="services">
-    <h2>Our IT Services</h2>
 
-    <div class="cards">
+    <h2 class="section-title">
+        Our Services
+    </h2>
 
-        <div class="card">
+    <div class="services-grid">
+
+        <div class="service-card">
+
+            <i class="fas fa-cloud"></i>
+
             <h3>Cloud Computing</h3>
+
             <p>
-                Scalable cloud infrastructure using AWS,
-                Azure and Google Cloud.
+
+                Secure, scalable cloud infrastructure
+                and deployment services.
+
             </p>
+
         </div>
 
-        <div class="card">
+        <div class="service-card">
+
+            <i class="fas fa-shield-alt"></i>
+
             <h3>Cybersecurity</h3>
+
             <p>
-                Network security, penetration testing and
-                vulnerability assessments.
+
+                Protecting networks, applications,
+                and business assets.
+
             </p>
+
         </div>
 
-        <div class="card">
+        <div class="service-card">
+
+            <i class="fas fa-robot"></i>
+
             <h3>Artificial Intelligence</h3>
+
             <p>
-                AI-powered business automation and analytics.
+
+                AI-driven automation,
+                analytics, and business intelligence.
+
             </p>
+
         </div>
 
-        <div class="card">
-            <h3>Web Development</h3>
+        <div class="service-card">
+
+            <i class="fas fa-code"></i>
+
+            <h3>Software Development</h3>
+
             <p>
-                Modern websites and enterprise applications.
+
+                Modern web, mobile,
+                and enterprise applications.
+
             </p>
+
         </div>
 
     </div>
+
 </section>
 
-<section id="tech">
-    <h2>Technologies We Use</h2>
+<!-- AI SECTION -->
+<section class="ai-section">
+
+    <div class="ai-content">
+
+        <h2>AI Powered Innovation</h2>
+
+        <p>
+
+            Harness the power of machine learning,
+            intelligent automation, and predictive analytics
+            to transform your business operations.
+
+        </p>
+
+        <button class="primary-btn">
+            Learn More
+        </button>
+
+    </div>
+
+    <div class="ai-image">
+
+        <img
+        src="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=1200"
+        alt="Artificial Intelligence">
+
+    </div>
+
+</section>
+
+<!-- TECHNOLOGY STACK -->
+<section id="technology">
+
+    <h2 class="section-title">
+        Technology Stack
+    </h2>
 
     <div class="tech-grid">
-        <span>HTML5</span>
-        <span>CSS3</span>
-        <span>JavaScript</span>
-        <span>React</span>
-        <span>Node.js</span>
-        <span>Python</span>
-        <span>AWS</span>
-        <span>Docker</span>
+
+        <div class="tech-card">HTML5</div>
+        <div class="tech-card">CSS3</div>
+        <div class="tech-card">JavaScript</div>
+        <div class="tech-card">React</div>
+        <div class="tech-card">Node.js</div>
+        <div class="tech-card">Python</div>
+        <div class="tech-card">AWS</div>
+        <div class="tech-card">Azure</div>
+        <div class="tech-card">Docker</div>
+        <div class="tech-card">Kubernetes</div>
+        <div class="tech-card">TensorFlow</div>
+        <div class="tech-card">MongoDB</div>
+
     </div>
+
 </section>
 
+<!-- DASHBOARD -->
+<section class="dashboard">
+
+    <h2 class="section-title">
+        Technology Dashboard
+    </h2>
+
+    <div class="dashboard-grid">
+
+        <div class="metric-card">
+
+            <h3>99.99%</h3>
+
+            <p>Cloud Availability</p>
+
+        </div>
+
+        <div class="metric-card">
+
+            <h3>256 TB</h3>
+
+            <p>Data Managed</p>
+
+        </div>
+
+        <div class="metric-card">
+
+            <h3>1200+</h3>
+
+            <p>Deployments</p>
+
+        </div>
+
+        <div class="metric-card">
+
+            <h3>24/7</h3>
+
+            <p>Monitoring</p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+
+    <h2 class="section-title">
+        Innovation Gallery
+    </h2>
+
+    <div class="gallery-grid">
+
+        <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=800" alt="Tech">
+
+        <img src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?w=800" alt="Programming">
+
+        <img src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=800" alt="Robot">
+
+        <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=800" alt="Cyber">
+
+        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800" alt="Developer">
+
+        <img src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=800" alt="Security">
+
+    </div>
+
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="testimonials">
+
+    <h2 class="section-title">
+        Client Testimonials
+    </h2>
+
+    <div class="testimonial-grid">
+
+        <div class="testimonial-card">
+
+            <p>
+
+                "Innovartus transformed our cloud
+                infrastructure and increased reliability."
+
+            </p>
+
+            <h4>- Enterprise Client</h4>
+
+        </div>
+
+        <div class="testimonial-card">
+
+            <p>
+
+                "Outstanding cybersecurity expertise
+                and excellent support."
+
+            </p>
+
+            <h4>- Technology Firm</h4>
+
+        </div>
+
+        <div class="testimonial-card">
+
+            <p>
+
+                "Their AI solutions helped us automate
+                critical business processes."
+
+            </p>
+
+            <h4>- Innovation Startup</h4>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- CONTACT -->
 <section id="contact">
-    <h2>Contact Us</h2>
+
+    <h2 class="section-title">
+        Contact Us
+    </h2>
 
     <form id="contactForm">
-        <input type="text" placeholder="Name" required>
 
-        <input type="email" placeholder="Email" required>
+        <input
+        type="text"
+        placeholder="Your Name"
+        required>
 
-        <textarea placeholder="Message"></textarea>
+        <input
+        type="email"
+        placeholder="Email Address"
+        required>
 
-        <button type="submit">Send Message</button>
+        <textarea
+        rows="6"
+        placeholder="Your Message"
+        required></textarea>
+
+        <button
+        type="submit"
+        class="primary-btn">
+
+            Send Message
+
+        </button>
+
     </form>
+
 </section>
 
+<!-- FOOTER -->
 <footer>
-    <p>© 2026 Innovartus Technologies</p>
+
+    <div class="footer-content">
+
+        <h3>Innovartus Technologies</h3>
+
+        <p>
+
+            Building The Future Through Technology
+
+        </p>
+
+        <div class="social-icons">
+
+            <i class="fab fa-facebook"></i>
+
+            <i class="fab fa-linkedin"></i>
+
+            <i class="fab fa-github"></i>
+
+            <i class="fab fa-twitter"></i>
+
+        </div>
+
+    </div>
+
 </footer>
 
+<!-- LIBRARIES -->
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+<script src="https://unpkg.com/scrollreveal"></script>
+
+<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+<!-- CUSTOM JS -->
 <script src="script.js"></script>
 
 </body>
